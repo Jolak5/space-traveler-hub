@@ -1,9 +1,9 @@
 
-# Math-Magicians <a name="readme-top"></a>
+# mission-rocket <a name="readme-top"></a>
 
 <div align="center">
  
-  <h3><b>Math-Magicians</b></h3>
+  <h3><b>mission-rocket</b></h3>
 
 </div>
 
@@ -31,9 +31,9 @@
 - [📝 License](#license)
 
 
-# 📖 [Math-Magicians] <a name="about-project"></a>
+# 📖 [mission-rocket] <a name="about-project"></a>
 
-**[Math-Magicians]**  is a  React App that has calculation functionality
+**[mission-rocket]**  is a  React App where users can easily book and cancle private rocket reservations
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -64,15 +64,15 @@
 ### Key Features <a name="key-features"></a>
 
 
-- Has a calculator
-- has homepage with details about the a8pp
+- Has a missions page
+- users can cancel and make reservations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://Jolak5.github.io/Math-Magicians)
+- [Live Demo Link](https://Jolak5.github.io/mission-rocket)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,8 +82,8 @@
 
 To get a local copy up and running, follow these steps.
 
-- clone this repo:https://github.com/Jolak5/Math-Magicians
-- cd Math-Magicians
+- clone this repo:https://github.com/Jolak5/mission-rocket
+- cd mission-rocket
 - run npm start to view the project
 
 ### Prerequisites
@@ -104,8 +104,8 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-- use the git clone command with this [link](https://github.com/Jolak5/Math-Magicians)
-- cd into First-hello-microverse-project
+- use the git clone command with this [link](https://github.com/Jolak5/mission-rocket)
+- cd into mission-rocket
 - Switch branch using this command `git checkout dev`
 - Open index.html in your browser
 - You will be able to see a simple movie website with featured movies and series
@@ -130,6 +130,11 @@ Example commands:
 - Twitter: [@twitterhandle](https://twitter.com/I_amBabakay)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/olatunji-kayode/)
 
+👤 **Author: Muhammad Usman Aslam**
+
+- GitHub: [@githubhandle](https://github.com/MuhammadUsmanAslam)
+- Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
 
 
 
