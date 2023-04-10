@@ -8,7 +8,7 @@ const Navbar = () => (
     <header>
       <a className="logo" href="/">
         <img src={logo} alt="Logo" />
-        <h1>Speace Travelers&apos; Hub</h1>
+        <h1>Space Travelers&apos; Hub</h1>
       </a>
       <nav className="navbar">
         <NavLink to="/">Missions</NavLink>
