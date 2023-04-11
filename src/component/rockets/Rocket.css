@@ -1,0 +1,35 @@
+.rocket {
+  display: flex;
+  padding: 1em 0;
+}
+
+.rocket > img {
+  height: 10em;
+  width: 12.5em;
+}
+
+.rocket__right {
+  justify-content: flex-start;
+  padding-left: 0.5em;
+  max-height: 10em;
+  overflow: auto;
+}
+
+.rocket__right__name {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.rocket__right__description {
+  margin: 0.5em 0;
+}
+
+.rocket__right__button {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25em;
+}

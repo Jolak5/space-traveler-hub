@@ -7,7 +7,7 @@ import {
 import './App.css';
 import Missions from './component/Missions';
 import Navbar from './component/Navbar';
-import Rockets from './component/Rockets';
+import Rockets from './component/rockets/Rockets';
 import Myprofile from './component/Myprofile';
 
 const router = createBrowserRouter(

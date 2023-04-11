@@ -1,0 +1,9 @@
+.rockets {
+  width: 90%;
+  padding: 0 1em;
+  margin: 1em auto;
+}
+
+.rockets__list {
+  padding: 0;
+}
