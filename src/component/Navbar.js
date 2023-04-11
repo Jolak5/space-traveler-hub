@@ -11,8 +11,8 @@ const Navbar = () => (
         <h1>Space Travelers&apos; Hub</h1>
       </a>
       <nav className="navbar">
-        <NavLink to="/">Missions</NavLink>
-        <NavLink to="rockets">Rockets</NavLink>
+        <NavLink to="/">Rockets</NavLink>
+        <NavLink to="missions">Missions</NavLink>
         <hr />
         <NavLink to="myprofile">My Profile</NavLink>
       </nav>
