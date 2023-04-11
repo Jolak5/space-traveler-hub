@@ -7,22 +7,15 @@ import './mission.css';
 export default function Missions() {
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.missions.isLoading);
-  const join = useSelector((state) => state.missions.join);
 
   useEffect(() => {
     dispatch(getMissions());
   }, [dispatch]);
 
   const mission = useSelector((state) => state.missions.missions);
-  const state = useSelector((state) => state.missions.missions);
 
-  function changeMission(id) {
-    const newState = state.map((rocket) => {
-      if (rocket.id !== id) return rocket;
-      return { ...rocket, reserved: true };
-    });
-    dispatch(joinMission(newState));
-  }
+  // function changeMemberState(id) {
+  // }
 
   if (isLoading) {
     return (
@@ -44,16 +37,16 @@ export default function Missions() {
           </tr>
         </thead>
         {mission.map((item) => (
-          <tbody key={item.mission_id} id={item.mission_id}>
+          <tbody key={item.mission_id}>
             <tr>
               <td>{item.mission_name}</td>
               <td>{item.description}</td>
               <td>
-                {join ? 'Not a member' : 'member'}
+                {item.joined ? 'member' : 'Not a member'}
               </td>
               <td>
-                <button type="button" onClick={changeMission()}>
-                  {join ? 'Join Mission' : 'Leave Mission'}
+                <button type="button" onClick={() => dispatch(joinMission(item.mission_id))}>
+                  {item.joined ? 'leave Mission' : 'join Mission' }
                 </button>
               </td>
             </tr>

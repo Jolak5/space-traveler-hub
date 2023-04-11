@@ -20,18 +20,21 @@ export const missionsSlice = createSlice({
   initialState: {
     missions: [],
     isLoading: true,
-    join: false,
   },
   reducers: {
-    joinMission: (state, action) => ({
-      ...state,
-      state: [action.payload, { ...action.payload, reserved: true }],
-    }),
+    joinMission: (state, action) => {
+      const id = action.payload;
+      const newState = state.missions.map((mission) => {
+        if (mission.mission_id !== id) return mission;
+        return { ...mission, joined: !mission.joined };
+      });
+      return { ...state, missions: newState };
+    },
   },
   extraReducers: {
     [getMissions.pending]: (state) => ({
       ...state,
-      isLoading: false,
+      isLoading: true,
     }),
     [getMissions.fulfilled]: (state, action) => ({
       ...state,
