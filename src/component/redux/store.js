@@ -3,6 +3,6 @@ import missionsReducer from './missions/missionsSlice';
 
 export default configureStore({
   reducer: {
-    counter: missionsReducer,
+    missions: missionsReducer,
   },
 });
