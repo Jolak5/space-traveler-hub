@@ -12,6 +12,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
       name: item.name,
       type: item.type,
       description: item.description,
+      reserved: false,
     }));
     return newData;
   } catch (error) {
@@ -27,7 +28,19 @@ const initialState = {
 export const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
-  reducers: {},
+  reducers: {
+    changeReservedState: (state, action) => {
+      const id = action.payload;
+      const newRockets = state.rockets.map((rocket) => {
+        if (rocket.id !== id) return rocket;
+        return { ...rocket, reserved: !rocket.reserved };
+      });
+      return {
+        ...state,
+        rockets: newRockets,
+      };
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getRockets.pending, (state) => ({
       ...state,
@@ -42,5 +55,7 @@ export const rocketsSlice = createSlice({
     }));
   },
 });
+
+export const { changeReservedState } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
