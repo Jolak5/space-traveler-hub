@@ -1,12 +1,10 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from './redux/missions/missionsSlice';
+import { getMissions, joinMission } from '../redux/missions/missionsSlice';
 import './mission.css';
 
 export default function Missions() {
-  const [join, setJoin] = useState(true);
-  const [membership, noMembership] = useState(true);
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.missions.isLoading);
 
@@ -16,10 +14,8 @@ export default function Missions() {
 
   const mission = useSelector((state) => state.missions.missions);
 
-  function changeMemberState() {
-    noMembership(!membership);
-    setJoin(!join);
-  }
+  // function changeMemberState(id) {
+  // }
 
   if (isLoading) {
     return (
@@ -46,11 +42,11 @@ export default function Missions() {
               <td>{item.mission_name}</td>
               <td>{item.description}</td>
               <td>
-                {membership ? 'Not a member' : 'member'}
+                {item.joined ? 'member' : 'Not a member'}
               </td>
               <td>
-                <button type="button" onClick={() => changeMemberState()}>
-                  {join ? 'Join Mission' : 'Leave Mission'}
+                <button type="button" onClick={() => dispatch(joinMission(item.mission_id))}>
+                  {item.joined ? 'leave Mission' : 'join Mission' }
                 </button>
               </td>
             </tr>
