@@ -21,6 +21,16 @@
   font-weight: 500;
 }
 
+.rocket__reserved-badge {
+  display: inline;
+  background-color: #007bff;
+  border-radius: 5px;
+  font-style: normal;
+  padding: 0 0.25em;
+  text-align: center;
+  margin-right: 0.25em;
+}
+
 .rocket__right__description {
   margin: 0.5em 0;
 }
@@ -30,6 +40,15 @@
   padding: 0.5em 1em;
   background-color: #007bff;
   color: #fff;
-  border: none;
+  border-radius: 0.25em;
+  border: 1px solid #007bff;
+}
+
+.rocket__right__button--reserved {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  background-color: #fff;
+  color: #808080;
+  border: 1px solid #808080;
   border-radius: 0.25em;
 }

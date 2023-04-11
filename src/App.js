@@ -8,7 +8,7 @@ import './App.css';
 import Missions from './component/Missions';
 import Navbar from './component/Navbar';
 import Rockets from './component/rockets/Rockets';
-import Myprofile from './component/Myprofile';
+import Myprofile from './component/myprofile/Myprofile';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

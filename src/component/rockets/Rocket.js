@@ -1,14 +1,22 @@
 import './Rocket.css';
 import React from 'react';
 import PropTypes, { string } from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { changeReservedState } from '../redux/rockets/rocketsSlice';
 
 function Rocket(props) {
-  const { flickrImages, name, description } = props;
+  const {
+    id, flickrImages, name, description, reserved,
+  } = props;
+
+  const dispatch = useDispatch();
 
   Rocket.propTypes = {
+    id: PropTypes.string.isRequired,
     flickrImages: PropTypes.arrayOf(string).isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
   };
 
   return (
@@ -16,8 +24,19 @@ function Rocket(props) {
       <img src={flickrImages[0]} alt={name} />
       <div className="rocket__right">
         <p className="rocket__right__name">{name}</p>
-        <p className="rocket__right__description">{description}</p>
-        <button className="rocket__right__button" type="submit">Reserve Rocket</button>
+        <p className="rocket__right__description">
+          {reserved && <i className="rocket__reserved-badge">reserved</i>}
+          {description}
+        </p>
+        <button
+          onClick={() => {
+            dispatch(changeReservedState(id));
+          }}
+          className={reserved ? 'rocket__right__button--reserved' : 'rocket__right__button'}
+          type="submit"
+        >
+          {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+        </button>
       </div>
     </li>
   );
