@@ -13,8 +13,8 @@ import Myprofile from './component/Myprofile';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Navbar />}>
-      <Route index element={<Missions />} />
-      <Route path="rockets" index element={<Rockets />} />
+      <Route index element={<Rockets />} />
+      <Route path="missions" index element={<Missions />} />
       <Route path="myprofile" index element={<Myprofile />} />
     </Route>,
   ),
