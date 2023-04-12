@@ -1,16 +1,8 @@
 import './Rockets.css';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getRockets } from '../redux/rockets/rocketsSlice';
+import { useSelector } from 'react-redux';
 import Rocket from './Rocket';
 
 const Rockets = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
-
   const rockets = useSelector((state) => state.rockets);
 
   return (

@@ -28,3 +28,14 @@ td:nth-child(3),
 th {
   padding: 0 30px;
 }
+
+.joinMission {
+  color: grey;
+  padding: 4px;
+  background-color: white;
+  border-color: blue;
+}
+
+.joinMission .active {
+  background-color: red;
+}
