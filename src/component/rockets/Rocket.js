@@ -19,9 +19,11 @@ function Rocket(props) {
     reserved: PropTypes.bool.isRequired,
   };
 
+  const zero = 0;
+
   return (
     <li className="rocket">
-      <img src={flickrImages[0]} alt={name} />
+      <img src={flickrImages[zero]} alt={name} />
       <div className="rocket__right">
         <p className="rocket__right__name">{name}</p>
         <p className="rocket__right__description">
