@@ -1,6 +1,3 @@
-
-# mission-rocket <a name="readme-top"></a>
-
 <div align="center">
  
   <h3><b>Mission-Rocket</b></h3>
@@ -30,9 +27,9 @@
 - [📝 License](#license)
 
 
-# 📖 [Mission-Rocket] <a name="about-project"></a>
+# 📖 Mission-Rocket <a name="about-project"></a>
 
-**[Mission-Rocket]**  is a  React App where users can easily book and cancle private rocket reservations
+**Mission-Rocket**  is a  React App where users can easily book and cancle private rocket reservations
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,7 +65,7 @@
 
 - Has Missions page
 - Has Rockets page
-- - Has MyProfile page
+- Has MyProfile page
 - users can cancel and make reservations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
