@@ -3,10 +3,9 @@
 
 <div align="center">
  
-  <h3><b>mission-rocket</b></h3>
+  <h3><b>Mission-Rocket</b></h3>
 
 </div>
-
 
 # 📗 Table of Contents
 
@@ -31,52 +30,54 @@
 - [📝 License](#license)
 
 
-# 📖 [mission-rocket] <a name="about-project"></a>
+# 📖 [Mission-Rocket] <a name="about-project"></a>
 
-**[mission-rocket]**  is a  React App where users can easily book and cancle private rocket reservations
+**[Mission-Rocket]**  is a  React App where users can easily book and cancle private rocket reservations
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>HTML</summary>
+  <summary>Front-end</summary>
   <ul>
     <li>HTML</li>
+    <li>JSX</li>
+    <li>CSS3</li>
+    <li>React</li>
+    <li>Redux</li>
+    <li>JavaScript</li>
   </ul>
 </details>
 
 <details>
-  <summary>CSS</summary>
+  <summary>Back-end</summary>
   <ul>
-    <li>CSS</li>
+    <li>N/A</li>
   </ul>
 </details>
 
 <details>
-<summary>React JS</summary>
+<summary>Database</summary>
   <ul>
-    <li>React JS</li>
+    <li>N/A</li>
   </ul>
 </details>
-
 
 ### Key Features <a name="key-features"></a>
 
-
-- Has a missions page
+- Has Missions page
+- Has Rockets page
+- - Has MyProfile page
 - users can cancel and make reservations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://Jolak5.github.io/mission-rocket)
+- [Live Demo Link](https://space-mission-409j.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
