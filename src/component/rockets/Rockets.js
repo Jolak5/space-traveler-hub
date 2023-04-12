@@ -13,7 +13,7 @@ const Rockets = () => {
             <Rocket
               key={rocket.id}
               id={rocket.id}
-              flickrImages={rocket.flickrImages}
+              flickrImage={rocket.flickrImage}
               name={rocket.name}
               type={rocket.type}
               description={rocket.description}
