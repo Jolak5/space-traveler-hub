@@ -6,8 +6,8 @@ import Myprofile from '../myprofile/Myprofile';
 
 afterEach(cleanup);
 
-describe('Missions', () => {
-  it('Missions to match Snapshot', () => {
+describe('Profile', () => {
+  it('Profile to match Snapshot', () => {
     const quotes = render(<Provider store={store}><Myprofile /></Provider>);
     expect(quotes).toMatchSnapshot();
   });

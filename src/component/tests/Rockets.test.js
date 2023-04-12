@@ -6,8 +6,8 @@ import Rocket from '../rockets/Rocket';
 
 afterEach(cleanup);
 
-describe('Missions', () => {
-  it('Missions to match Snapshot', () => {
+describe('Rockets', () => {
+  it('Rockets to match Snapshot', () => {
     const quotes = render(<Provider store={store}><Rocket /></Provider>);
     expect(quotes).toMatchSnapshot();
   });
