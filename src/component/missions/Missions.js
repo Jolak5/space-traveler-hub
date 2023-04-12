@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
 import { useDispatch, useSelector } from 'react-redux';
 import { joinMission } from '../redux/missions/missionsSlice';
 import './mission.css';
@@ -8,9 +7,6 @@ export default function Missions() {
   const isLoading = useSelector((state) => state.missions.isLoading);
 
   const mission = useSelector((state) => state.missions.missions);
-
-  // function changeMemberState(id) {
-  // }
 
   if (isLoading) {
     return (
