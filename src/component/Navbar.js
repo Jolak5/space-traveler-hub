@@ -1,26 +1,36 @@
+import React, { useEffect } from 'react';
 import './Navbar.css';
-import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import logo from '../assets/planet.png';
+import { getMissions } from './redux/missions/missionsSlice';
+import { getRockets } from './redux/rockets/rocketsSlice';
 
-const Navbar = () => (
-  <div>
-    <header>
-      <a className="logo" href="/">
-        <img src={logo} alt="Logo" />
-        <h1>Space Travelers&apos; Hub</h1>
-      </a>
-      <nav className="navbar">
-        <NavLink to="/">Rockets</NavLink>
-        <NavLink to="missions">Missions</NavLink>
-        <hr />
-        <NavLink to="myprofile">My Profile</NavLink>
-      </nav>
-    </header>
-    <main>
-      <Outlet />
-    </main>
-  </div>
-);
+export default function Navbar() {
+  const dispatch = useDispatch();
 
-export default Navbar;
+  useEffect(() => {
+    dispatch(getMissions());
+    dispatch(getRockets());
+  }, [dispatch]);
+
+  return (
+    <div>
+      <header>
+        <a className="logo" href="/">
+          <img src={logo} alt="Logo" />
+          <h1>Space Travelers&apos; Hub</h1>
+        </a>
+        <nav className="navbar">
+          <NavLink to="/">Rockets</NavLink>
+          <NavLink to="missions">Missions</NavLink>
+          <hr />
+          <NavLink to="myprofile">My Profile</NavLink>
+        </nav>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+    </div>
+  );
+}

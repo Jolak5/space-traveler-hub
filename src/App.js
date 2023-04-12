@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import './App.css';
-import Missions from './component/Missions';
+import Missions from './component/missions/Missions';
 import Navbar from './component/Navbar';
 import Rockets from './component/rockets/Rockets';
 import Myprofile from './component/myprofile/Myprofile';

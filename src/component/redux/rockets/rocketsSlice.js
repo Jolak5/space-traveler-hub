@@ -8,7 +8,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
     const res = await axios.get(URL);
     const newData = res.data.map((item) => ({
       id: item.id,
-      flickrImages: item.flickr_images,
+      flickrImage: item.flickr_images[0],
       name: item.name,
       type: item.type,
       description: item.description,

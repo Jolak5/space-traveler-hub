@@ -7,14 +7,16 @@ const Myprofile = () => {
 
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
 
+  const missions = useSelector((state) => state.missions.missions);
+
+  const joinedMission = missions.filter((mission) => mission.joined);
+
   return (
     <div className="myprofile">
       <div className="myprofile__mymissions">
         <h2>My Missions</h2>
         <ul className="myprofile__list">
-          <li className="myprofile__list-item">Missiosn 1</li>
-          <li className="myprofile__list-item">Missiosn 2</li>
-          <li className="myprofile__list-item">Missiosn 3</li>
+          {joinedMission.length ? joinedMission.map((item) => (<li key={item.item_id} className="myprofile__list-item">{item.mission_name}</li>)) : <li className="myprofile__list-item">No Rockets Reserved yet</li>}
         </ul>
       </div>
       <div className="myprofile__myrockets">
