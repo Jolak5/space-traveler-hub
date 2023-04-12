@@ -36,10 +36,15 @@ export default function Missions() {
             <tr>
               <td>{item.mission_name}</td>
               <td>{item.description}</td>
-              <td>{item.joined ? 'member' : 'Not a member'}</td>
+              <td>
+                <p className={item.joined ? 'member' : 'notMember'}>
+                  {' '}
+                  {item.joined ? 'member' : 'Not a member'}
+                </p>
+              </td>
               <td>
                 <button
-                  className="joinMission"
+                  className={item.joined ? 'leaveMission' : 'joinMission'}
                   type="button"
                   onClick={() => dispatch(joinMission(item.mission_id))}
                 >

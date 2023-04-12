@@ -24,18 +24,39 @@ td:nth-child(2) {
   line-height: 1.5rem;
 }
 
-td:nth-child(3),
 th {
   padding: 0 30px;
 }
 
-.joinMission {
-  color: grey;
-  padding: 4px;
+.leaveMission {
+  color: red;
   background-color: white;
-  border-color: blue;
+  border-color: red;
+  cursor: pointer;  
+  margin: 0 5px;
+
 }
 
-.joinMission .active {
-  background-color: red;
+.joinMission {
+  color: black;
+  border-color: black;
+  background-color: white;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.member {
+  color: white;
+  background-color: blue;
+  border-radius: 2px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.notMember {
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  margin: 0 5px;
 }
