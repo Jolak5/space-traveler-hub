@@ -1,12 +1,8 @@
-
-# Math-Magicians <a name="readme-top"></a>
-
 <div align="center">
  
-  <h3><b>Math-Magicians</b></h3>
+  <h3><b>Mission-Rocket</b></h3>
 
 </div>
-
 
 # 📗 Table of Contents
 
@@ -31,59 +27,61 @@
 - [📝 License](#license)
 
 
-# 📖 [Math-Magicians] <a name="about-project"></a>
+# 📖 Mission-Rocket <a name="about-project"></a>
 
-**[Math-Magicians]**  is a  React App that has calculation functionality
+**Mission-Rocket**  is a  React App where users can easily book and cancle private rocket reservations
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>HTML</summary>
+  <summary>Front-end</summary>
   <ul>
     <li>HTML</li>
+    <li>JSX</li>
+    <li>CSS3</li>
+    <li>React</li>
+    <li>Redux</li>
+    <li>JavaScript</li>
   </ul>
 </details>
 
 <details>
-  <summary>CSS</summary>
+  <summary>Back-end</summary>
   <ul>
-    <li>CSS</li>
+    <li>N/A</li>
   </ul>
 </details>
 
 <details>
-<summary>React JS</summary>
+<summary>Database</summary>
   <ul>
-    <li>React JS</li>
+    <li>N/A</li>
   </ul>
 </details>
-
 
 ### Key Features <a name="key-features"></a>
 
-
-- Has a calculator
-- has homepage with details about the a8pp
+- Has Missions page
+- Has Rockets page
+- Has MyProfile page
+- users can cancel and make reservations
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://Jolak5.github.io/Math-Magicians)
+- [Live Demo Link](https://space-mission-409j.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
-- clone this repo:https://github.com/Jolak5/Math-Magicians
-- cd Math-Magicians
+- clone this repo:https://github.com/Jolak5/mission-rocket
+- cd mission-rocket
 - run npm start to view the project
 
 ### Prerequisites
@@ -104,8 +102,8 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-- use the git clone command with this [link](https://github.com/Jolak5/Math-Magicians)
-- cd into First-hello-microverse-project
+- use the git clone command with this [link](https://github.com/Jolak5/mission-rocket)
+- cd into mission-rocket
 - Switch branch using this command `git checkout dev`
 - Open index.html in your browser
 - You will be able to see a simple movie website with featured movies and series
@@ -130,6 +128,11 @@ Example commands:
 - Twitter: [@twitterhandle](https://twitter.com/I_amBabakay)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/olatunji-kayode/)
 
+👤 **Author: Muhammad Usman Aslam**
+
+- GitHub: [@githubhandle](https://github.com/MuhammadUsmanAslam)
+- Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
 
 
 
